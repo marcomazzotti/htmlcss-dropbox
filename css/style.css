@@ -44,14 +44,13 @@ a{
 .header{
   /* debug */
   /* min-height: 50px; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* /debug */
   width: 100%;
   position: fixed;
   background-color: white;
   justify-content: space-between;
   align-items: center;
-  color: grey;
   padding: 20px 10px;
 }
 
@@ -118,23 +117,35 @@ a{
 /* Section-3 */
 .section-3{
   /* debug */
-  min-height: 200px;
+  /* min-height: 200px; */
   /* /debug */
   margin: 50px auto 0 auto;
+  align-items: center;
 }
 
 .col-img{
-  width: 70%;
+  width: 60%;
   /* debug */
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   /* /debug */
 }
 
 .col-text{
-  width: 30%;
+  width: 40%;
   /* debug */
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   /* /debug */
+  padding-left: 30px;
+}
+
+.col-text p{
+  padding: 20px 0 20px;
+}
+
+.col-text button{
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
 }
 
 /* Section-4 */
@@ -146,11 +157,20 @@ a{
 }
 
 /* more */
-.more{
+.dropbox-business{
   /* debug */
-  min-height: 100px;
+  /* min-height: 100px; */
   /* /debug */
   margin: 50px auto 50px auto;
+}
+
+.dropbox-business span{
+  text-decoration: underline;
+  color: blue;
+}
+
+.dropbox-business h2{
+  padding-bottom: 50px;
 }
 
 /* loghi */
