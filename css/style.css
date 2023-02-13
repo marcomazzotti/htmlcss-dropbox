@@ -51,7 +51,7 @@ a{
   background-color: white;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10px;
+  padding: 10px 10px;
 }
 
 .header ul{
@@ -203,6 +203,16 @@ a{
   min-height: 150px;
   /* /debug */
   justify-content: space-between;
+  align-items:baseline;
+}
+
+.free-trial button{
+  padding: 10px 30px;
+  border: none;
+}
+
+.free-trial h2{
+  color: #61092b;
 }
 
 /* faq */
