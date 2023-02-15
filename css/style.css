@@ -36,6 +36,15 @@ a{
   color: inherit;
 }
 
+.btn-primary{
+  display: inline-block;
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  line-height: normal;
+  padding: 0.4em 1em;
+}
+
 /* UTILITIES */
 .justify-between{
   justify-content: space-between;
@@ -59,32 +68,30 @@ a{
   /* min-height: 50px; */
   /* border: 1px solid red; */
   /* /debug */
+  height: 60px;
   width: 100%;
   position: fixed;
   background-color: white;
   justify-content: space-between;
-  padding: 0.8rem 0.8rem;
+  /* padding: 0.8rem 0.8rem; */
   z-index: 1000;
+  line-height: 60px;
+}
+
+#header-logo{
+  vertical-align: middle;
 }
 
 .header ul{
-  gap: 1.3rem;
+  gap: 1rem;
 }
 
 .list-right{
-  margin-left: 2rem;
+  margin-left: 0.5rem;
 }
 
-.menu-left button{
-  background-color: blue;
-  color: white;
-  margin-left: 1.4rem;
-  padding: 0.4rem 0.7rem;
-  border: none;
-}
-
-.menu-left, .menu-right{
-  align-items: center;
+.list-left{
+  margin-right: 1rem;
 }
 
 /* SECTIONS */
@@ -103,10 +110,11 @@ a{
 }
 
 .large-container{
-  padding-top: 4rem;
   width: 70%;
   margin: 0 auto;
   position: relative;
+  top: 7rem;
+  padding-bottom: 4rem;
 }
 
 .col-40{
@@ -117,6 +125,10 @@ a{
   /* /debug */
 }
 
+.annulla{
+  margin-bottom: 7rem;
+}
+
 .col-60{
   width: 60%;
   /* debug */
@@ -125,16 +137,9 @@ a{
   /* /debug */
 }
 
-.col-40 i{
+.btn-arrow{
   font-size: 3rem;
-  padding-bottom: 0.5rem;
-  padding-top: 5rem;
-}
-
-.col-40 a{
-  color: white;
-  background-color: blue;
-  padding: 0.8rem 1rem;
+  background-color: none;
 }
 
 /* Section-1 */
