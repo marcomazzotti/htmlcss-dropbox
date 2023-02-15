@@ -12,7 +12,7 @@ body{
 
 .container{
   /* debug */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* /debug */
   width: 60%;
   margin: 0 auto;
@@ -43,6 +43,10 @@ a{
   color: white;
   line-height: normal;
   padding: 0.4em 1em;
+}
+
+.btn-primary:hover{
+  background-color: rgba(0, 0, 255, 0.8);
 }
 
 /* UTILITIES */
@@ -86,20 +90,25 @@ a{
   gap: 1rem;
 }
 
-.list-right{
+.list-left{
   margin-left: 0.5rem;
 }
 
-.list-left{
-  margin-right: 1rem;
+.list-left li:not(:first-child):hover{
+  border-bottom: 1px solid black;
 }
+
+.list-right li:not(:last-child):hover{
+  border-bottom: 1px solid black;
+}
+
 
 /* SECTIONS */
 /* jumbotron */
 .jumbotron{
   /* debug */
   /* min-height: 300px; */
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   /* /debug */
   /* width: 100%; */
   background-color: #b4d0e7;
@@ -126,7 +135,7 @@ a{
 }
 
 .annulla{
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
 }
 
 .col-60{
@@ -143,11 +152,17 @@ a{
 }
 
 /* Section-1 */
-.section-1{
+.plans{
   /* debug */
   min-height: 600px;
   /* /debug */
-  margin: 4rem auto 3rem auto;
+  margin: 6rem auto 6rem auto;
+}
+
+#annuale{
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .col{
@@ -155,8 +170,67 @@ a{
   /* debug */
   /* border: 1px solid orange; */
   /* /debug */
+  border: 1px solid lightgray;
 }
 
+.card-header{
+  border-bottom: 1px solid lightgrey;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.card-content{
+  padding: 1.5rem 1rem;
+}
+
+.card-content h3{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-content .price{
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card-content .period{
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.card-content .features li{
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-content .features i{
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.card .btn{
+  width: 100%;
+  text-align: center;
+}
+
+.buy{
+  text-decoration: underline;
+  color: blue;
+}
+
+.card hr{
+  width: 20%;
+}
+
+.card h4{
+  margin-bottom: 1rem;
+}
+
+.features-primary i{
+  color: blue;
+}
 .team{
   align-items: center;
   text-align: center;
@@ -165,16 +239,16 @@ a{
   padding: 0.5rem 0;
 }
 
-.col-70{
-  width: 70%;
+.col-60{
+  width: 60%;
   /* border: 1px solid red; */
 }
 
-.col-70 h3{
+.col-60 h3{
   padding-bottom: 1rem;
 }
 
-.col-70 h5{
+.col-60 h5{
   padding-bottom: 3rem;
 }
 
@@ -185,25 +259,22 @@ a{
 }
 
 .enterprise{
-  padding: 2rem;
+  padding: 1.5rem;
+  border-left: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
 }
 
-/* Section-2 */
-.section-2{
-  /* debug */
-  min-height: 150px;
-  /* /debug */
+.enterprise-row{
+  justify-content: space-between;
 }
 
-.team{
-  /* debug */
-  border-bottom: 1px solid grey;
-  min-height: 30px;
-  /* /debug */
+.col-30 .btn-primary{
+  align-items: flex-end;
 }
 
 /* Section-3 */
-.section-3{
+.dropbox-partner{
   /* debug */
   /* min-height: 200px; */
   /* /debug */
@@ -241,15 +312,19 @@ a{
 }
 
 /* Section-4 */
-.section-4{
+.operations{
   /* debug */
   min-height: 500px;
   /* /debug */
-  margin: 3rem auto 3rem auto;
+  margin: 5rem auto 3rem auto;
+}
+
+.operations .col{
+  border: none;
 }
 
 .dropbox-business{
-  margin-bottom: 5rem;
+  margin: 5rem auto;
 }
 .section-4 h2{
   padding-bottom: 1.5rem;
@@ -271,7 +346,7 @@ a{
 /* loghi */
 .loghi{
   /* debug */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* /debug */
   width: 100%;
   height: 350px;
@@ -279,7 +354,7 @@ a{
 
 .big-square{
   width: calc(100% / 3);
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
 }
 
 .square-text{
@@ -310,7 +385,7 @@ a{
 .small-square{
   width: calc(100% / 2);
   height: calc(350px / 2);
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
   justify-content: center;
   align-items: center;
 }
@@ -375,11 +450,16 @@ a{
   width: 50%;
 }
 
-.free-trial button{
-  padding: 0.8rem 1rem;
+.col-30 .btn-primary{
+  padding: 0.8rem 1.2rem;
   border: none;
   width: 100%;
   background-color: #ffffff;
+  color: black;
+}
+
+.col-30 .btn-primary:hover{
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .free-trial h2{
@@ -391,7 +471,54 @@ a{
   /* debug */
   min-height: 300px;
   /* /debug */
-  margin: 3rem auto 3rem auto;
+  margin: 5rem auto 5rem auto;
+}
+
+.faq h2{
+  margin-bottom: 2rem;
+}
+
+.faq-list li{
+  border-top: 1px solid grey;
+  padding: 2rem 0;
+}
+
+.last{
+  border-bottom: 1px solid grey;
+}
+
+.question{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question p{
+  padding-top: 2rem;
+}
+
+.arrow{
+  font-size: 0.8rem;
+  padding-right: 3rem;
+}
+
+.up{
+  display: none;
+}
+
+.answer{
+  display: none;
+}
+
+.question:hover .answer{
+  display: block;
+}
+
+.question:hover .up{
+  display: inline;
+}
+
+.question:hover .down{
+  display: none;
 }
 
 /* FOOTER */
