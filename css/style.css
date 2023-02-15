@@ -56,7 +56,7 @@ a{
 /* HEADER */
 .header{
   /* debug */
-  min-height: 50px;
+  /* min-height: 50px; */
   /* border: 1px solid red; */
   /* /debug */
   width: 100%;
@@ -64,6 +64,7 @@ a{
   background-color: white;
   justify-content: space-between;
   padding: 0.8rem 0.8rem;
+  z-index: 1000;
 }
 
 .header ul{
@@ -97,10 +98,15 @@ a{
   background-color: #b4d0e7;
 }
 
+.main-title{
+  font-size: 3rem;
+}
+
 .large-container{
-  padding-top: 5rem;
+  padding-top: 4rem;
   width: 70%;
   margin: 0 auto;
+  position: relative;
 }
 
 .col-40{
@@ -121,8 +127,8 @@ a{
 
 .col-40 i{
   font-size: 3rem;
-  padding-bottom: 1rem;
-  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+  padding-top: 5rem;
 }
 
 .col-40 a{
@@ -263,7 +269,7 @@ a{
   border: 1px solid red;
   /* /debug */
   width: 100%;
-  height: 250px;
+  height: 350px;
 }
 
 .big-square{
@@ -275,7 +281,7 @@ a{
   overflow: scroll;
   padding: 2rem;
   background-color: #ffffff;
-  height: 250px;
+  height: 100%;
 }
 
 .square-text img{
@@ -298,7 +304,7 @@ a{
 
 .small-square{
   width: calc(100% / 2);
-  height: 125px;
+  height: calc(350px / 2);
   border: 1px solid pink;
   justify-content: center;
   align-items: center;
@@ -386,13 +392,49 @@ a{
 /* FOOTER */
 .footer{
   /* debug */
-  min-height: 200px;
+  /* min-height: 200px; */
   /* /debug */
   background-color: black;
-  color: white;
+  /* padding: 1.4rem; */
+  /* height: 1000px; */
+  
+}
+
+.large-container-footer{
+  padding-top: 4rem;
+  width: 70%;
+  margin: 0 auto;
+  gap: 2.5rem;
 }
 
 .footer ul{
-  padding: 1.4rem;
   margin: 0 auto;
+  color: white;
+}
+
+.footer h2{
+  padding-bottom: 1rem;
+}
+
+.footer li{
+  padding-bottom: 1rem;
+}
+
+.language{
+  align-items: center;
+  gap: 5px;
+  font-weight: 300;
+  padding-top: 3rem;
+  color: grey;
+  padding-bottom: 3rem;
+}
+
+.footer-end{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 7rem;
+}
+
+.footer-end hr{
+  width: 15%;
 }
